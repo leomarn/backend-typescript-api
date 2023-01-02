@@ -7,9 +7,6 @@ import updateBooks from './update-books.routes';
 
 const routes = Router()
 
-routes.use('/products', creatBooks)
-routes.use('/products', readBooks)
-routes.use('/products', updateBooks)
-routes.use('/products', deleteBooks)
+routes.use('/products', creatBooks, readBooks, updateBooks, deleteBooks)
 
 export default routes;
